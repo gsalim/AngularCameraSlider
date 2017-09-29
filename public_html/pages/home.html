@@ -1,0 +1,49 @@
+<div class="wow fadeInDown text-center" id="animationSandbox">
+    <h3 class="site__title mega" style="padding-bottom: 20px">This is Home Page</35>
+</div>
+
+<!--<div class="fluid_container">
+    <p>Pagination circles with the height relative to the width</p>
+    <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+        <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Camera is a responsive/adaptive slide show. <em>Try to resize the browser window</em>
+            </div>
+        </div>
+        <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
+            <div class="camera_caption fadeFromBottom">
+                It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="camera_wrap camera_magenta_skin" id="camera_wrap_2">
+        <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/bridge.jpg">
+            <div class="camera_caption fadeFromBottom">
+                Camera is a responsive/adaptive slide show. <em>Try to resize the browser window</em>
+            </div>
+        </div>
+        <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
+            <div class="camera_caption fadeFromBottom">
+                It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<div class="container" style="height: 77vh">
+    <div camera options="{thumbnails: true, pagination: true, height: '500px', fx: 'random', time: 2000}" class="camera_wrap camera_azure_skin">
+        <div
+            ng-repeat="image in images" data-thumb="{{image.thumb}}" data-src="{{image.bigimage}}">
+            <div class="camera_caption fadeFromBottom text-center">
+                {{image.desc}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <a data-ui-sref="fbcci" class="site__title mega">GO TO FBCCI</a>
+</div>
+
+
